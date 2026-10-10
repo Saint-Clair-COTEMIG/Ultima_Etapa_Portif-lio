@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saint Clair | Portfólio</title>
+  <meta name="description" content="Portfólio de Saint Clair, estudante de T.I com foco em hardware, ambientes computacionais e back-end.">
+
+  <!-- aplica o tema salvo antes de desenhar a página evita piscar -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('tema'); } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="logo" href="#inicio">Saint Clair</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#sobre"><i class="n">1</i>Sobre</a>
+      <a href="#habilidades"><i class="n">2</i>Habilidades</a>
+      <a href="#certificados"><i class="n">3</i>Certificados</a>
+      <a href="#projetos"><i class="n">4</i>Projetos</a>
+      <a href="#contato"><i class="n">5</i>Contato</a>
+      <button class="tema-btn" id="temaBtn" aria-label="Alternar entre modo claro e escuro">
+        <span class="metade" aria-hidden="true"></span>
+        <span id="temaTexto">Claro</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero" id="inicio">
+      <div class="hero-topo"><span>Portfólio</span><span>2026</span></div>
+      <h1 class="nome" aria-label="Saint Clair">
+        <span data-t="Saint" aria-hidden="true">Saint</span>
+        <span data-t="Clair" aria-hidden="true">Clair</span>
+      </h1>
+      <div class="hero-base">
+        <p class="digita"><span id="digitando">Estudante de T.I</span></p>
+        <div class="hero-links">
+          <a href="#projetos">Ver projetos ↓</a>
+          <a href="#contato">Contato ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao" id="sobre">
+      <div class="lado"><i class="n">1</i><h2>Sobre</h2></div>
+      <div class="corpo sobre">
+        <div class="texto-longo" data-aos="fade-up">
+          <p class="lead">Sou Saint Clair, estudante do segundo ano do COTEMIG, no turno da tarde, e estagiário em meio período no Colégio Santa Maria de Minas, em Nova Lima.</p>
+          <p>Tenho 16 anos e me dedico principalmente a hardware e ambientes computacionais, área em que tenho mais afinidade e domínio. Também tenho conhecimento em Front-End, mas minha preferência é pelo Back-End.</p>
+          <p>Estou sempre disposto a estudar a ferramenta necessária antes de aplicá-la no trabalho. Falo inglês desde os 8 anos e convivo com o ambiente profissional desde cedo, o que me trouxe responsabilidade e familiaridade com prazos curtos.</p>
+        </div>
+        <figure class="retrato" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/foto.jpg" alt="Retrato de Saint Clair em preto e branco" width="1000" height="1000" loading="lazy">
+          <figcaption class="rotulo">Saint Clair</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="secao" id="habilidades">
+      <div class="lado"><i class="n">2</i><h2>Habilidades</h2></div>
+      <div class="corpo">
+        <h3 class="rotulo">Soft skills</h3>
+        <div class="soft" data-aos="fade-up">
+          <div><strong>Inteligência emocional</strong><p>Autocontrole e sensibilidade para compreender os sentimentos da equipe.</p></div>
+          <div><strong>Trabalho sob prazos curtos</strong><p>Familiaridade com a rotina e as entregas de um ambiente profissional.</p></div>
+          <div><strong>Resolução de problemas</strong><p>Análise do cenário e busca de soluções práticas.</p></div>
+        </div>
+
+        <h3 class="rotulo">Hard skills · idioma e produtividade</h3>
+        <div class="celulas" data-aos="fade-up">
+          <span>Inglês</span><span>Excel avançado</span><span>Pacote Office</span><span>Google Drive</span><span>Análise de dados</span>
+        </div>
+        <h3 class="rotulo">Hard skills · design</h3>
+        <div class="celulas" data-aos="fade-up">
+          <span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>Canva</span>
+        </div>
+        <h3 class="rotulo">Hard skills · programação, redes e dados</h3>
+        <div class="celulas" data-aos="fade-up">
+          <span>Python</span><span>JavaScript</span><span>SQL</span><span>C#</span><span>HTML</span><span>Portugol</span><span>Cisco Packet Tracer</span><span>Banco de dados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section class="secao" id="certificados">
+      <div class="lado"><i class="n">3</i><h2>Certificados</h2></div>
+      <div class="corpo certificado" data-aos="fade-up">
+        <button class="foto-cert" id="certBtn" aria-label="Ampliar o certificado Introdução à IA moderna">
+          <img src="img/certificado-ia.png" alt="Certificado Introdução à IA moderna, concedido a Saint Clair José Silva Neves pela Cisco Networking Academy" loading="lazy">
+        </button>
+        <div class="cert-info">
+          <h3>Introdução à IA moderna</h3>
+          <p>Curso oferecido pelo COTEMIG por meio do programa Cisco Networking Academy.</p>
+          <p class="muda">Concluído em 26 de junho de 2026.</p>
+          <a class="btn" href="img/certificado-ia.pdf" target="_blank" rel="noopener">Abrir o PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="secao" id="projetos">
+      <div class="lado"><i class="n">4</i><h2>Projetos</h2></div>
+      <div class="corpo sem-pad">
+        <div class="projetos">
+          <button class="proj" data-projeto="analisador" data-aos="fade-up">
+            <span class="proj-n">01</span><span class="proj-nome">Analisador Matemático</span><span class="proj-tag">C# · Windows Forms</span><span class="proj-seta">↗</span>
+          </button>
+          <button class="proj" data-projeto="arena" data-aos="fade-up">
+            <span class="proj-n">02</span><span class="proj-nome">Arena de RPG</span><span class="proj-tag">C# · Orientação a objetos</span><span class="proj-seta">↗</span>
+          </button>
+          <button class="proj" data-projeto="trilha" data-aos="fade-up">
+            <span class="proj-n">03</span><span class="proj-nome">Trilha</span><span class="proj-tag">HTML · CSS · Landing page</span><span class="proj-seta">↗</span>
+          </button>
+          <button class="proj" data-projeto="portfolio" data-aos="fade-up">
+            <span class="proj-n">04</span><span class="proj-nome">Este portfólio</span><span class="proj-tag">Figma · HTML · CSS · JS</span><span class="proj-seta">↗</span>
+          </button>
+        </div>
+        <a class="github" href="https://github.com/Saint-Clair-COTEMIG" target="_blank" rel="noopener" data-aos="fade-up">
+          <span>GitHub</span><span class="proj-seta">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao" id="contato">
+      <div class="lado"><i class="n">5</i><h2>Contato</h2></div>
+      <div class="corpo">
+        <form class="form" id="formContato" novalidate data-aos="fade-up">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome completo" maxlength="60">
+            <span class="erro" id="erro-nome" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="numeric" placeholder="(31) 90000-0000" maxlength="15">
+            <span class="erro" id="erro-telefone" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@exemplo.com" maxlength="80">
+            <span class="erro" id="erro-email" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" placeholder="Escreva sua mensagem"></textarea>
+            <span class="contador" id="contador">0 / 500</span>
+            <span class="erro" id="erro-mensagem" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-cheio">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="etiqueta" aria-label="Saint Clair">Saint Clair</div>
+    <div class="rodape-contato">
+      <a href="mailto:saintsilvaneves@gmail.com">saintsilvaneves@gmail.com</a>
+      <a href="https://github.com/Saint-Clair-COTEMIG" target="_blank" rel="noopener">GitHub</a>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <!-- MODAL projetos certificado e confirmação do formulário -->
+  <dialog class="modal" id="modal" aria-labelledby="modalTitulo">
+    <button class="modal-fechar" id="modalFechar" aria-label="Fechar">Fechar ×</button>
+    <h3 id="modalTitulo"></h3>
+    <img id="modalImg" alt="" hidden>
+    <div id="modalCorpo"></div>
+    <p class="modal-tags" id="modalTags"></p>
+    <a class="btn" id="modalLink" target="_blank" rel="noopener" hidden></a>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
